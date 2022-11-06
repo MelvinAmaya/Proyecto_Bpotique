@@ -1,0 +1,70 @@
+{% load static %}
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plantilla básica de Bootstrap</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- librerías opcionales que activan el soporte de HTML5 para IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1>Boutique UGB.</h1>
+    <br/>
+
+    <center><h2>Ropa Para Hombre.</h2></center>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <img src="{% static 'image/Camisa.png' %}" class="img-thumbnail" alt="Camisa manga larga para Hombre." width="200" height="200"/>
+        </div>
+        <div class="col">
+          <img src="{% static 'image/Pantalonjpg.jpg' %}"  class="img-thumbnail" alt="pantalon baquero para Hombre." width="200" height="200"/>
+        </div>
+        <div class="col">
+          <img src="{% static 'image/Zapatos.png' %}" class="img-thumbnail" alt="Zapatos para Hombre." width="200" height="200"/>
+        </div>
+      </div>
+    </div>
+
+
+    <center><h2 calss= "container text-center">Ropa Para Mujer.</h2></center>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <img src="{% static 'image/camisa-mujer.jpg' %}" class="img-thumbnail" alt="Camisa manga larga para mujer." width="200" height="200"/>
+        </div>
+        <div class="col">
+          <img src="{% static 'image/pantalon-mujer.jpg' %}" class="img-thumbnail" alt="pantalon baquero para mujer." width="200" height="200"/>
+        </div>
+        <div class="col">
+          <img src="{% static 'image/zapato_mujer.jpg' %}" class="img-thumbnail" alt="Zapatos para mujer." width="200" height="200"/>
+        </div>
+      </div>
+    </div>
+
+    <!-- Librería jQuery requerida por los plugins de JavaScript -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+    <!-- Todos los plugins JavaScript de Bootstrap (también puedes
+         incluir archivos JavaScript individuales de los únicos
+         plugins que utilices) -->
+    <script src="js/bootstrap.min.js"></script>
+
+    
+
+  </body>
+</html>

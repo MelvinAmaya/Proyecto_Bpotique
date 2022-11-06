@@ -1,0 +1,88 @@
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  .shared-panel{
+	overflow: auto;
+}
+.shared-panel span{
+	margin: 10px 0;
+	font-size: 16px;
+	font-weight: 600;
+}
+.shared {
+	display: inline-block;
+	width: 30px; 
+	height: 30px;
+	margin: 5px 0; 
+	padding: 0; 
+        /* Recurso incluido en la descarga del ejemplo */
+	background: url("shared.png") no-repeat; 
+	float: left;
+	margin-right: 5px; 
+	cursor: pointer;
+	border-radius: 50%;
+}
+.shared:hover{
+	opacity: 0.7;
+}
+.shared.gp {background-position: 0px 0px; background-color: #E62B34;}
+.shared.tt {background-position: 0px -30px; background-color: #43BDF0;}
+.shared.ce {background-position: 0px -60px; background-color: #8A898D;}
+.shared.wa {background-position: 0px -90px; background-color: #0dc143;}
+.shared.fb {background-position: 0px -120px; background-color: #6081C4;}
+
+.st2{
+   border-radius: 0;
+}
+.st3{
+   border-radius: 5px;
+}
+</style>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Equipo De trabajo</title>
+
+    
+
+    <!-- CSS de Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- librerías opcionales que activan el soporte de HTML5 para IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1>Boutique UGB.</h1>
+    <center><h2>Jaime Arnoldo Rodriguez Meza</h2></center>
+    <center><h2>Melvin Josué Perez Garcia</h2></center>
+    <center><h2>Melvin Josué Pereira Amaya</h2></center>
+    <center><h2>Oscar René Mondragón Orellana</h2></center>
+
+
+    <div class="shared-panel">
+      <span>Compartir icones redondos</span><br>
+      <a target="_blank" class="shared fb" title="Facebook"></a>	
+      <a target="_blank" class="shared tt" title="Twitter"></a>
+      <a target="_blank" class="shared gp" title="Google+"></a>
+      <a  data-action='share/whatsapp/share' class="shared wa" title="WhatsApp"></a>
+      <a target="_blank" class="shared ce" id="sml" title="Email"></a>		
+    </div>
+
+    <!-- Librería jQuery requerida por los plugins de JavaScript -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+    <!-- Todos los plugins JavaScript de Bootstrap (también puedes
+         incluir archivos JavaScript individuales de los únicos
+         plugins que utilices) -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
